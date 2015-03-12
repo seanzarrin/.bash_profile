@@ -4,22 +4,23 @@ export PATH=$PATH:~/scripts
 alias cls="clear; pwd; ls"
 alias which_stage="grep stage ~/Developer/merchantsignupnodeweb/config/app-development.json | grep -o [0-9][0-9][0-9][0-9]"
 alias sublime="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias ls="ls -GFh"
 
 # Alias Git commands
-alias commit="git commit -m"
-alias fetch="git fetch"
-alias pull="git pull"
-alias push="git push"
-alias status="git status"
-alias stash="git stash"
-alias add="git add"
-alias checkout="git checkout"
-alias branch="git branch"
+alias gc="git commit -m"
+alias gf="git fetch"
+alias gpull="git pull"
+alias gpush="git push"
+alias gstatus="git status"
+alias gstash="git stash"
+alias ga="git add"
+alias gch="git checkout"
+alias gb="git branch"
 alias g="git"
 
+# Alias node commands
 alias s="npm start"
 alias killit="killall -9 node"
-alias ls="ls -GFh"
 alias reinstall="sudo rm -rf node_modules; sudo npm cache clean; sudo npm install"
 
 # use z in place of cd
