@@ -1,10 +1,16 @@
 export PATH=/usr/local/bin:$PATH
 export PATH=$PATH:~/scripts
 
+#Reload bash config
+alias src='source ~/.bash_profile'
+alias bp='vi ~/.bash_profile'
+
 alias cls="clear; pwd; ls"
 alias which_stage="grep stage ~/Developer/merchantsignupnodeweb/config/app-development.json | grep -o [0-9][0-9][0-9][0-9]"
 alias sublime="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-alias ls="ls -GFh"
+
+#Better ls
+alias ls='ls -Gph'
 
 # Alias Git commands
 alias gc="git commit -m"
@@ -35,5 +41,6 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$(__git_ps1)\[\033[0;37m\]\$ "
-
+# Show branch name colorized
+export PS1="\[\033[36m\]\u:\[\033[33;1m\]\w\[\e[0;35m\]\$(__git_ps1)\[\033[m\]\$ "
+export LSCOLORS=cxfxcxdxxxegedabagacad
