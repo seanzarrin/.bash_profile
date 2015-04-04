@@ -13,15 +13,15 @@ alias sublime="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias ls='ls -Gph'
 
 # Alias Git commands
-alias gc="git commit -m"
-alias gf="git fetch"
-alias gpull="git pull"
-alias gpush="git push"
-alias gstatus="git status"
-alias gstash="git stash"
-alias ga="git add"
-alias gch="git checkout"
-alias gb="git branch"
+alias fetch="git fetch"
+alias pull="git pull"
+alias push="git push"
+alias status="git status"
+alias stash="git stash"
+alias add="git add"
+alias checkout="git checkout"
+alias commit="git commit -m "
+alias branch="git branch"
 alias g="git"
 
 # Alias node commands
