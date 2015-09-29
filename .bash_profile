@@ -6,7 +6,6 @@ alias src='source ~/.bash_profile'
 alias bp='vi ~/.bash_profile'
 
 alias cls="clear; pwd; ls"
-alias which_stage="grep stage ~/Developer/merchantsignupnodeweb/config/app-development.json | grep -o [0-9][0-9][0-9][0-9]"
 alias sublime="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 #Better ls
